@@ -16,8 +16,8 @@ import { catchError } from 'rxjs/operators';
 }) // Decorador que permite inyectar dependencias al servicio
 export class ApiService {
 
-  private apiUrl = 'http://alum1.iesfsl.org/api/v1/';
-  // private apiUrl = 'http://127.0.0.1:8000/api/v1/'; // URL de la API a la que se realizarán las peticiones
+  // private apiUrl = 'http://alum1.iesfsl.org/api/v1/';
+  private apiUrl = 'http://127.0.0.1:8000/api/v1/'; // URL de la API a la que se realizarán las peticiones
   transitoId :any;
 
   constructor(private http: HttpClient,private sharedDataService: SharedDataService) { }
