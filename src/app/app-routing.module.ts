@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ContenidoTransitoComponent } from './transito/contenido-transito/contenido-transito.component';
 import { TablaTransitoComponent } from './transito/tabla-transito/tabla-transito.component';
 import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
+import { PanelComponent } from './panel/panel.component';
 import { EmbarcacionesComponent } from './embarcacion/embarcaciones/embarcaciones.component';
 import { CardIncidenciaComponent } from './movil/card-incidencia/card-incidencia.component';
 import { CardConfirmacionTransitoComponent } from './movil/card-confirmacion-transito/card-confirmacion-transito.component';
@@ -41,18 +42,31 @@ const routes: Routes = [
     component: LoginComponent,
   },
   {
-    path: 'dashboard',
+    path: 'panel',
     component: ContenidoComponent,
     children: [
       {
         path: '',
         canActivate: [roleGuard], // Se utiliza el guard para verificar el rol del usuario
 
-        component: DashboardComponent,
+        component: PanelComponent,
         data: { role: '2' }
       }
     ]
   },
+  // {
+  //   path: 'dashboard',
+  //   component: ContenidoComponent,
+  //   children: [
+  //     {
+  //       path: '',
+  //       canActivate: [roleGuard], // Se utiliza el guard para verificar el rol del usuario
+
+  //       component: DashboardComponent,
+  //       data: { role: '2' }
+  //     }
+  //   ]
+  // },
   {
     path: 'embarcaciones',
     canActivate: [roleGuard],

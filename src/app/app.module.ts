@@ -14,10 +14,11 @@ import { LoginModule } from './login/login.module';
 import { PlazaBaseModule } from './plaza-base/plaza-base.module';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
-import { AuthInterceptor } from './shared/auth.interceptor';
+import { AuthInterceptor } from './services/auth/auth.interceptor';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
+import { PanelComponent } from './panel/panel.component';
 @NgModule({
-  declarations: [AppComponent, ErrorHandlerComponent],
+  declarations: [AppComponent, ErrorHandlerComponent, PanelComponent],
 
   imports: [
     BrowserModule,

@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
-import { AuthService } from 'src/app/shared/auth.service';
-import { TokenService } from 'src/app/shared/token.service';
+import { AuthService } from 'src/app/services/auth/auth.service';
+import { TokenService } from 'src/app/services/auth/token.service';
 import { Router } from '@angular/router';
 
 @Component({

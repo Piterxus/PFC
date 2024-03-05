@@ -1,9 +1,9 @@
 import { Component } from '@angular/core'; // Importación de módulo necesario para la definición de componentes
-import { AuthService } from 'src/app/shared/auth.service'; // Importación de servicio AuthService
+import { AuthService } from 'src/app/services/auth/auth.service'; // Importación de servicio AuthService
 import { FormBuilder, FormGroup } from '@angular/forms'; // Importación de módulos necesarios para el manejo de formularios reactivos
 import { Router } from '@angular/router'; // Importación de módulo necesario para el manejo de rutas
-import { TokenService } from 'src/app/shared/token.service'; // Importación de servicio TokenService
-import { AuthStateService } from 'src/app/shared/auth-state.service'; // Importación de servicio AuthStateService
+import { TokenService } from 'src/app/services/auth/token.service'; // Importación de servicio TokenService
+import { AuthStateService } from 'src/app/services/auth/auth-state.service'; // Importación de servicio AuthStateService
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -51,7 +51,7 @@ export class LoginComponent {
       () => {
         this.authState.setAuthState(true);
         this.loginForm.reset();
-        this.router.navigate(['dashboard']);
+        this.router.navigate(['panel']);
       }
     );
   }

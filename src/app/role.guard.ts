@@ -14,7 +14,7 @@ export const roleGuard: CanActivateFn = (route:ActivatedRouteSnapshot, state: Ro
     switch (role) {
       case '2':
       
-      inject(Router).navigate(['dashboard']);
+      inject(Router).navigate(['panel']);
         break;
       case '3':
      

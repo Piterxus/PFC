@@ -1,6 +1,6 @@
 import { Injectable } from "@angular/core"; // Decorador que permite inyectar dependencias al servicio
 import { HttpInterceptor, HttpRequest, HttpHandler } from "@angular/common/http"; // Importación de módulos necesarios para el manejo de peticiones HTTP
-import { TokenService } from "../shared/token.service"; // Importación de servicio TokenService
+import { TokenService } from "./token.service"; // Importación de servicio TokenService
 @Injectable() // Decorador que define la inyección de dependencias del servicio en el módulo raíz
 export class AuthInterceptor implements HttpInterceptor {
     constructor(private tokenService: TokenService) { } // Método constructor para crear un objeto del servicio
