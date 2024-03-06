@@ -1,16 +1,26 @@
+.contenedor {
+
+  display: flex;
+
+}
+
+
 .contenido {
   height: 100vh;
   background-color: #eaeff4;
   flex: 1;
   display: flex;
   flex-direction: column;
-}
-
-.contenedor {
-
-  display: flex;
 
 }
+
+.contenido-interno{
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+
+}
+
 
 .azul500 {
   width: 200px;
