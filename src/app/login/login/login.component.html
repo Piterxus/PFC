@@ -1,25 +1,12 @@
-<div class="  container-fluid">
-  <div class=" contenedor-login row  w-75 postal position-absolute top-50 start-50 translate-middle shadow p-4">
-    <!-- Decoración a la izquierda -->
-    <div class=" col-md-6  h-100 d-flex flex-column justify-content-center background-left position-relative ">
-      <div class="welcomeLogin w-100">
-        <h2 class="w-100">BIENVENIDO</h2>
-      </div>
+<div class="container-fluid  d-flex  justify-content-center align-items-center loginSocios">
 
+  
 
-      <!-- Imagen abajo a la izquierda -->
-      <img src="/assets/img/Group.svg" alt="Logo Portos de Galicia" class="img-fluid position-absolute bottom-0 start-0 mb-4 ms-3 desktop-image">
-    <img src="/assets/img/Group_Movil.svg" alt="Logo Portos de Galicia" class="img-fluid position-absolute  start-50 translate-middle mb-4 mt-4 mobile-image">
-    </div>
+    <div class="col-md-6 h-100 d-flex flex-column justify-content-center inicio">
+      <div >
+        <h1 class="textHeaderLogin text-center"><strong>Inicio</strong></h1>
 
-    <br><br>
-
-    <!-- Formulario de inicio de sesión a la derecha -->
-    <div class="col-md-6 h-100 d-flex flex-column justify-content-center">
-      <div>
-        <h1 class="textHeaderLogin"><strong>Login</strong></h1>
-
-        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="d-flex flex-column align-items-center">
           <div *ngIf="errors?.email" class="alert alert-danger mt-3">
             {{ errors?.email }}
           </div>
@@ -30,7 +17,8 @@
             {{ errors?.error }}
           </div>
 
-          <div class="mb-5">
+          <div class="mb-5 d-flex">
+            <label for="email">Email:</label>
             <input
               type="email"
               class="form-control"
@@ -39,7 +27,8 @@
             />
           </div>
 
-          <div class="mb-5">
+          <div class="mb-5 d-flex">
+            <label for="password">Contraseña:</label>
             <input
               type="password"
               class="form-control"
@@ -49,9 +38,7 @@
             <a href="#"> </a>
           </div>
 
-         
           <div class="mb-5 d-flex justify-content-between align-items-center">
-           
             <div class="form-check">
               <input
                 type="checkbox"
@@ -94,5 +81,5 @@
       </div>
     </div>
   </div>
-</div>
-<router-outlet></router-outlet>
+
+<!-- <router-outlet></router-outlet> -->
