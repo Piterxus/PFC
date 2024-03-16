@@ -1,33 +1,66 @@
 <div class="contenedor">
   <!-- <app-navlateral></app-navlateral> -->
-  <nav class="navLat col-md-2 d-flex flex-column">
+  <!-- <nav class="navLat col-md-2 d-flex flex-column">
     <img alt="Bootstrap Image Preview" src="/assets/img/Group.svg" class="logo" />
-    <!-- <div *ngIf="admin"> -->
+   
     <div *ngIf="role==='2'">
 
     </div>
 
-  </nav>
+  </nav> -->
 
   <div class="contenido">
-    <nav class="navAlt navbar navbar-expand-sm navbar-dark test1 d-flex justify-content-end">
-      <div class="d-flex align-items-center"> <!-- Modificado para alinear verticalmente -->
-        <h3 class="mb-0 mr-3">¡Hola {{ name }}!</h3> <!-- Agregado margen a la derecha -->
-        <div class="d-flex">
-          <!-- <a *ngIf="role==='2'" class="navbar-brand" routerLink="../notificaciones"> Prescindo mientras maqueto-->
-          <a class="navbar-brand" routerLink="../notificaciones">
-            <img src="/assets/img/nots.svg" alt="Avatar Logo" style="width: 40px" class="rounded-pill notIcon" />
-          </a>
-          <a class="navbar-brand" href="#">
-            <img src="/assets/img/user.svg" alt="Avatar Logo" style="width: 40px" class="rounded-pill userIcon" />
-          </a>
-          <a class="navbar-brand" href="" (click)="logout()">
-            <img src="/assets/img/logout.svg" alt="Avatar Logo" style="width: 40px" class="rounded-pill logoutIcon" />
-          </a>
-        </div>
+    <div class="d-flex navs">
+      <div class="logoPfd"></div>
+      <!-- <img class="logoPfd" src="/assets/img/socios/log_PFD_nav.svg" alt=""> -->
+
+      <div>
+        <nav class="navAlto">
+          <a href="" class="altLink">PANEL PRINCIPAL</a>
+          <a href="" class="altLink">VER FACTURAS</a>
+          <a href="" class="altLink">CUENTAS Y TARJETAS</a>
+          <input type="search" name="" id="" />
+          <a href="" class="altLink salir">Salir</a>
+        </nav>
+        <nav
+          class="navBajo navbar navbar-expand-sm navbar-dark test1 d-flex justify-content-end"
+        >
+          <div class="d-flex align-items-center">
+            <!-- Modificado para alinear verticalmente -->
+            <h3 class="mb-0 mr-3">¡Hola {{ name }}!</h3>
+            <!-- Agregado margen a la derecha -->
+            <div class="d-flex">
+              <!-- <a *ngIf="role==='2'" class="navbar-brand" routerLink="../notificaciones"> Prescindo mientras maqueto-->
+              <a class="navbar-brand" routerLink="../notificaciones">
+                <img
+                  src="/assets/img/nots.svg"
+                  alt="Avatar Logo"
+                  style="width: 40px"
+                  class="rounded-pill notIcon"
+                />
+              </a>
+              <a class="navbar-brand" href="#">
+                <img
+                  src="/assets/img/user.svg"
+                  alt="Avatar Logo"
+                  style="width: 40px"
+                  class="rounded-pill userIcon"
+                />
+              </a>
+              <a class="navbar-brand" href="" (click)="logout()">
+                <img
+                  src="/assets/img/logout.svg"
+                  alt="Avatar Logo"
+                  style="width: 40px"
+                  class="rounded-pill logoutIcon"
+                />
+              </a>
+            </div>
+          </div>
+        </nav>
       </div>
-    </nav>
-    <!-- <app-navheader></app-navheader> -->
+    </div>
+
     <div class="contenido-interno">
       <router-outlet></router-outlet>
     </div>
