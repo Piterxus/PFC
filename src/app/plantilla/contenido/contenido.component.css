@@ -65,6 +65,12 @@
   font-family: Questrial;
 }
 
+.offLogout{
+  cursor: pointer;
+  margin-left: 5px;
+  width: 20px
+}
+
 input[type='search'] {
 
   height: 30px;
