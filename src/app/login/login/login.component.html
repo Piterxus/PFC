@@ -2,11 +2,11 @@
 
   
 
-    <div class="col-md-6 h-100 d-flex flex-column justify-content-center inicio">
-      <div >
-        <h1 class="textHeaderLogin text-center"><strong>Inicio</strong></h1>
-
-        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="d-flex flex-column align-items-center">
+    <div class="col-md-6 h-100 d-flex flex-column  inicio">
+      
+        <h1 class="textHeaderLogin text-center">INICIO</h1>
+        <div class=" d-flex justify-content-center align-items-center">
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="d-flex flex-column border mt-5">
           <div *ngIf="errors?.email" class="alert alert-danger mt-3">
             {{ errors?.email }}
           </div>
@@ -54,8 +54,11 @@
             <a href="#">¿Olvidaste tu contraseña?</a>
           </div>
 
-          <button type="submit" class="mt-4 float-end">ENVIAR</button>
+         <div class="d-flex justify-content-center">
+           <button type="submit" class="mt-4">ENVIAR</button>
+         </div>
         </form>
+        </div>
         <ng-template #forgotPasswordModal>
           <div class="modal-content">
             <div class="modal-header">
@@ -78,7 +81,7 @@
             </div>
           </div>
         </ng-template>
-      </div>
+      
     </div>
   </div>
 
