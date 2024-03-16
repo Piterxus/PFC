@@ -6,7 +6,7 @@
       
         <h1 class="textHeaderLogin text-center">INICIO</h1>
         <div class=" d-flex justify-content-center align-items-center">
-        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="d-flex flex-column  mt-5">
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="d-flex flex-column align-items-center justify-content-center  mt-5">
           <div *ngIf="errors?.email" class="alert alert-danger mt-3">
             {{ errors?.email }}
           </div>

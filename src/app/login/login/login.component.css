@@ -121,7 +121,7 @@ form{
     font-weight: 100;
     background-color: rgb(29, 40, 52, 0.3);
     border-radius: 5px 5px 0px 0px;
-    top: 0px;
+    
 }
 
 input:not([type="checkbox"]) {
@@ -133,6 +133,24 @@ input:not([type="checkbox"]) {
     /* border-bottom: 3px solid #000 !important; */
     font-family: questrial !important;
     /* margin-top: 150px !important; */
+}
+
+input {
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: #555;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 30px;
+
+
 }
 
 label {
@@ -179,7 +197,7 @@ input[type="password"]:focus {
     color: #000;
     text-align: center;
 
-    /* Lorem ipsum dolor (0.8em) */
+   
     font-family: Questrial;
     font-size: 12.8px;
     font-style: normal;
@@ -222,11 +240,11 @@ button {
 }
 
 input[name='email'] {
-    background-image: url(/assets/img/embarcaciones/formIcon_user.svg);
+    background-image: url(/assets/img/IconEmailForm.svg);
 
 }
 
-input[name='Matricula'] {
-    background-image: url(/assets/img/embarcaciones/formIcon_mat.svg);
+input[name='password'] {
+    background-image: url(/assets/img/IconPassForm.svg);
 
 }
