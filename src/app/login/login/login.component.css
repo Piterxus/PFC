@@ -220,3 +220,13 @@ button {
     line-height: 28px;
 
 }
+
+input[name='email'] {
+    background-image: url(/assets/img/embarcaciones/formIcon_user.svg);
+
+}
+
+input[name='Matricula'] {
+    background-image: url(/assets/img/embarcaciones/formIcon_mat.svg);
+
+}
