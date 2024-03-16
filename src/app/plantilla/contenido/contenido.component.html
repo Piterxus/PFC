@@ -15,53 +15,75 @@
       <!-- <img class="logoPfd" src="/assets/img/socios/log_PFD_nav.svg" alt=""> -->
 
       <div>
-        <nav class="navAlto">
-          <a href="" class="altLink">PANEL PRINCIPAL</a>
-          <a href="" class="altLink">VER FACTURAS</a>
-          <a href="" class="altLink">CUENTAS Y TARJETAS</a>
-          <input type="search" name="" id="" />
-          <a href="" class="altLink salir">Salir</a>
+        <nav class="navAlto d-flex justify-content-between">
+          <div>
+            <a href="" class="altLink">PANEL PRINCIPAL</a>
+            <a href="" class="altLink">VER FACTURAS</a>
+            <a href="" class="altLink">CUENTAS Y TARJETAS</a>
+          </div>
+          <div>
+            <input type="search" name="" id="" />
+            <a href="" class="altLink salir" (click)="logout()">Salir</a>
+          </div>
         </nav>
         <nav
-          class="navBajo navbar navbar-expand-sm navbar-dark test1 d-flex justify-content-end"
+          class="navBajo navbar navbar-expand-sm navbar-dark test1 d-flex justify-content-between"
         >
           <div class="d-flex align-items-center">
-            <!-- Modificado para alinear verticalmente -->
-            <h3 class="mb-0 mr-3">¡Hola {{ name }}!</h3>
-            <!-- Agregado margen a la derecha -->
-            <div class="d-flex">
-              <!-- <a *ngIf="role==='2'" class="navbar-brand" routerLink="../notificaciones"> Prescindo mientras maqueto-->
-              <a class="navbar-brand" routerLink="../notificaciones">
-                <img
-                  src="/assets/img/nots.svg"
-                  alt="Avatar Logo"
-                  style="width: 40px"
-                  class="rounded-pill notIcon"
-                />
-              </a>
-              <a class="navbar-brand" href="#">
-                <img
-                  src="/assets/img/user.svg"
-                  alt="Avatar Logo"
-                  style="width: 40px"
-                  class="rounded-pill userIcon"
-                />
-              </a>
-              <a class="navbar-brand" href="" (click)="logout()">
+            <a class="navbar-brand userSocio" href="#">
+              <img
+                src="/assets/img/socios/user.svg"
+                alt="Avatar Logo"
+                style="width: 40px"
+                class="rounded-pill userIcon"
+              />
+            </a>
+            <h6 class="mb-0 mr-3">¡Hola {{ name }}!</h6>
+          </div>
+          <!-- Agregado margen a la derecha -->
+          <div class="d-flex questions">
+            <!-- <a *ngIf="role==='2'" class="navbar-brand" routerLink="../notificaciones"> Prescindo mientras maqueto-->
+            <a class="navbar-brand" routerLink="../notificaciones">
+              <img
+                src="/assets/img/socios/interrogante.svg"
+                alt="Avatar Logo"
+                style="width: 40px"
+                class="rounded-pill notIcon"
+              />
+            </a>
+            <a class="navbar-brand" routerLink="../notificaciones">
+              <img
+                src="/assets/img/socios/sobre.svg"
+                alt="Avatar Logo"
+                style="width: 40px"
+                class="rounded-pill notIcon"
+              />
+            </a>
+
+            <!-- <a class="navbar-brand" href="" (click)="logout()">
                 <img
                   src="/assets/img/logout.svg"
                   alt="Avatar Logo"
                   style="width: 40px"
                   class="rounded-pill logoutIcon"
                 />
-              </a>
-            </div>
+              </a> -->
           </div>
         </nav>
       </div>
     </div>
 
     <div class="contenido-interno">
+      <a routerLink="../panel">
+        <img
+          src="/assets/img/socios/home.svg"
+          alt="Avatar Logo"
+          style="width: 20px"
+          class="notIcon"
+        />
+      </a>
+      <hr />
+      <h1 class="text-center headerPanel">Consulta general</h1>
       <router-outlet></router-outlet>
     </div>
   </div>

@@ -60,6 +60,11 @@
 
 }
 
+.headerPanel{
+  font-weight: lighter;
+  font-family: Questrial;
+}
+
 input[type='search'] {
 
   height: 30px;
