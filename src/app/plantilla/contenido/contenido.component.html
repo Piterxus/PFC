@@ -23,7 +23,12 @@
           </div>
           <div>
             <input type="search" name="" id="" />
-            <img src="/assets/img/offLogout.svg" alt="" class="offLogout"  (click)="logout()">
+            <img
+              src="/assets/img/offLogout.svg"
+              alt=""
+              class="offLogout"
+              (click)="logout()"
+            />
             <a href="" class="altLink salir">Salir</a>
           </div>
         </nav>
@@ -31,7 +36,7 @@
           class="navBajo navbar navbar-expand-sm navbar-dark test1 d-flex justify-content-between"
         >
           <div class="d-flex align-items-center">
-            <a class="navbar-brand userSocio"routerLink="../perfil">
+            <a class="navbar-brand userSocio" routerLink="../perfil">
               <img
                 src="/assets/img/socios/user.svg"
                 alt="Avatar Logo"
@@ -75,14 +80,13 @@
     </div>
 
     <div class="contenido-interno">
-    
-        <img
-          src="/assets/img/socios/home.svg"
-          alt="Avatar Logo"
-          style="width: 20px"
-          class="notIcon"
-        />
-   
+      <img
+        src="/assets/img/socios/home.svg"
+        alt="Avatar Logo"
+        style="width: 20px"
+        class="notIcon"
+      />
+
       <hr />
       <h1 class="text-center headerPanel">Consulta general</h1>
       <router-outlet></router-outlet>
