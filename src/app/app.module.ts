@@ -17,8 +17,11 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { AuthInterceptor } from './services/auth/auth.interceptor';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 import { PanelComponent } from './panel/panel.component';
+import { SocioAmarresComponent } from './socio/socio-amarres/socio-amarres.component';
+import { FormasPagoComponent } from './socio/formas-pago/formas-pago.component';
+import { FacturasSocioComponent } from './socio/facturas-socio/facturas-socio.component';
 @NgModule({
-  declarations: [AppComponent, ErrorHandlerComponent, PanelComponent],
+  declarations: [AppComponent, ErrorHandlerComponent, PanelComponent, SocioAmarresComponent, FormasPagoComponent, FacturasSocioComponent],
 
   imports: [
     BrowserModule,
