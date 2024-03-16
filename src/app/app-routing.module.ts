@@ -9,6 +9,7 @@ import { CardIncidenciaComponent } from './movil/card-incidencia/card-incidencia
 import { CardConfirmacionTransitoComponent } from './movil/card-confirmacion-transito/card-confirmacion-transito.component';
 import { NotificacionesComponent } from './notificaciones/notificaciones/notificaciones.component';
 import { TablaGuardiaComponent } from './guardia-civil/tabla-guardia/tabla-guardia.component';
+import { PerfilSocioComponent } from './socio/perfil-socio/perfil-socio.component';
 import { ContenidoPbComponent } from './plaza-base/contenido-pb/contenido-pb.component';
 import { TablaTripulanteComponent } from './transito/tabla-tripulante/tabla-tripulante.component';
 import { FormularioPbComponent } from './plaza-base/formulario-pb/formulario-pb.component';
@@ -50,6 +51,19 @@ const routes: Routes = [
         canActivate: [roleGuard], // Se utiliza el guard para verificar el rol del usuario
 
         component: PanelComponent,
+        data: { role: '2' }
+      }
+    ]
+  },
+  {
+    path: 'perfil',
+    component: ContenidoComponent,
+    children: [
+      {
+        path: '',
+        canActivate: [roleGuard], // Se utiliza el guard para verificar el rol del usuario
+
+        component: PerfilSocioComponent,
         data: { role: '2' }
       }
     ]
