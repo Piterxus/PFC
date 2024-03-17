@@ -32,6 +32,9 @@ export class ContenidoComponent implements OnInit {
     if (this.routeName === 'perfil') {
       this.routeName = 'Configurar perfil';
     }
+    if (this.routeName === 'miembros') {
+      this.routeName = 'Gestión miembros asociados';
+    }
    
    
   }
