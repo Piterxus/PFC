@@ -12,6 +12,8 @@ import { TablaGuardiaComponent } from './guardia-civil/tabla-guardia/tabla-guard
 import { PerfilSocioComponent } from './socio/socio/perfil-socio/perfil-socio.component';
 import { SocioMiembrosComponent } from './socio/socio/socio-miembros/socio-miembros.component';
 import { MiembrosFormComponent } from './socio/socio/socio-miembros/miembros-form/miembros-form.component';
+import { SocioAmarresComponent } from './socio/socio/socio-amarres/socio-amarres.component';
+import { AmarresFormComponent } from './socio/socio/socio-amarres/amarres-form/amarres-form.component';
 import { ContenidoPbComponent } from './plaza-base/contenido-pb/contenido-pb.component';
 import { TablaTripulanteComponent } from './transito/tabla-tripulante/tabla-tripulante.component';
 import { FormularioPbComponent } from './plaza-base/formulario-pb/formulario-pb.component';
@@ -84,6 +86,25 @@ const routes: Routes = [
       {
         path: 'formulario',
         component: MiembrosFormComponent,
+        canActivate: [roleGuard], // Se utiliza el guard para verificar el rol del usuario
+        data: { role: '2' }
+      }
+    ]
+  },
+  {
+    path: 'amarres-socio',
+    component: ContenidoComponent,
+    children: [
+      {
+        path: '',
+        canActivate: [roleGuard], // Se utiliza el guard para verificar el rol del usuario
+
+        component: SocioAmarresComponent,
+        data: { role: '2' }
+      },
+      {
+        path: 'formulario',
+        component: AmarresFormComponent,
         canActivate: [roleGuard], // Se utiliza el guard para verificar el rol del usuario
         data: { role: '2' }
       }
