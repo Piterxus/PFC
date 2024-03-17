@@ -90,7 +90,9 @@ input[type='search'] {
 }
 
 .salir {
-  font-weight: normal
+  color: #F5F7FA;
+  margin: 5px;
+  font-weight: normal;
 }
 
 .navBajo {
