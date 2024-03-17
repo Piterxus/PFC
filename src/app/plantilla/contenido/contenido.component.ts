@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router';
 import { TokenService } from 'src/app/services/auth/token.service';
 import { AuthService } from 'src/app/services/auth/auth.service';
 
@@ -9,10 +9,11 @@ import { AuthService } from 'src/app/services/auth/auth.service';
   templateUrl: './contenido.component.html',
   styleUrls: ['./contenido.component.css']
 })
-export class ContenidoComponent {
+export class ContenidoComponent implements OnInit {
   name: string = this.capitalizeFirstLetter(localStorage.getItem('name') || 'Usuario');
   role = localStorage.getItem('role') || null;
-  constructor(private authService: AuthService, private router: Router, private tokenService: TokenService) { }
+  routeName:any =null;
+  constructor(private authService: AuthService, private router: Router, private tokenService: TokenService, private route: ActivatedRoute) { }
   logout() {
 
     this.tokenService.removeToken();
@@ -21,6 +22,18 @@ export class ContenidoComponent {
   }
   private capitalizeFirstLetter(name: string): string {
     return name.charAt(0).toUpperCase() + name.slice(1);
+  }
+  
+  ngOnInit(): void {
+    this.routeName = this.route.snapshot.routeConfig?.path;
+    if (this.routeName === 'panel') {
+      this.routeName = 'Panel de control';
+    }
+    if (this.routeName === 'perfil') {
+      this.routeName = 'Configurar perfil';
+    }
+   
+   
   }
 
 }
