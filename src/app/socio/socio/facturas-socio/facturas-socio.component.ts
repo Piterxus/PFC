@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-facturas-socio',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./facturas-socio.component.css']
 })
 export class FacturasSocioComponent {
+  constructor(private router: Router) { }
 
+  volver() {
+    this.router.navigate(['/panel']);
+  }
 }
