@@ -60,12 +60,12 @@
 
 }
 
-.headerPanel{
+.headerPanel {
   font-weight: lighter;
   font-family: Questrial;
 }
 
-.offLogout{
+.offLogout {
   cursor: pointer;
   margin-left: 5px;
   width: 20px
@@ -89,14 +89,23 @@ input[type='search'] {
 
 }
 
-.salir{
-  font-weight:normal
+.salir {
+  font-weight: normal
 }
 
 .navBajo {
   /* width: 100%; */
   height: 5vh;
   background-color: #A6BED3;
+}
+
+
+.altLink:hover,
+.altLink:active,
+.altLink:focus {
+  background-color: #8CA1B4;
+  color: #1D2834;
+  padding: 5vh 0 5vh 0;
 }
 
 @media screen and (max-width: 992px) {
