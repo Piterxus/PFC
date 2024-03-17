@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { SocioComponent } from './socio.component';
 import { MiembrosFormComponent } from './socio-miembros/miembros-form/miembros-form.component';
+import { AmarresFormComponent } from './socio-amarres/amarres-form/amarres-form.component';
 
 
 
@@ -10,7 +11,8 @@ import { MiembrosFormComponent } from './socio-miembros/miembros-form/miembros-f
 @NgModule({
   declarations: [
     SocioComponent,
-    MiembrosFormComponent
+    MiembrosFormComponent,
+    AmarresFormComponent
 
   ],
   imports: [
