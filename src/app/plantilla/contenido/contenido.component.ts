@@ -12,7 +12,7 @@ import { AuthService } from 'src/app/services/auth/auth.service';
 export class ContenidoComponent implements OnInit {
   name: string = this.capitalizeFirstLetter(localStorage.getItem('name') || 'Usuario');
   role = localStorage.getItem('role') || null;
-  routeName:any =null;
+  routeName: any = null;
   constructor(private authService: AuthService, private router: Router, private tokenService: TokenService, private route: ActivatedRoute) { }
   logout() {
 
@@ -23,7 +23,7 @@ export class ContenidoComponent implements OnInit {
   private capitalizeFirstLetter(name: string): string {
     return name.charAt(0).toUpperCase() + name.slice(1);
   }
-  
+
   ngOnInit(): void {
     this.routeName = this.route.snapshot.routeConfig?.path;
     if (this.routeName === 'panel') {
@@ -35,8 +35,11 @@ export class ContenidoComponent implements OnInit {
     if (this.routeName === 'miembros') {
       this.routeName = 'Gestión miembros asociados';
     }
-   
-   
+    if (this.routeName === 'amarres-socio') {
+      this.routeName = 'Gestión de amarres';
+    }
+
+
   }
 
 }
