@@ -10,6 +10,7 @@ import { CardConfirmacionTransitoComponent } from './movil/card-confirmacion-tra
 import { NotificacionesComponent } from './notificaciones/notificaciones/notificaciones.component';
 import { TablaGuardiaComponent } from './guardia-civil/tabla-guardia/tabla-guardia.component';
 import { PerfilSocioComponent } from './socio/perfil-socio/perfil-socio.component';
+import { SocioMiembrosComponent } from './socio/socio-miembros/socio-miembros.component';
 import { ContenidoPbComponent } from './plaza-base/contenido-pb/contenido-pb.component';
 import { TablaTripulanteComponent } from './transito/tabla-tripulante/tabla-tripulante.component';
 import { FormularioPbComponent } from './plaza-base/formulario-pb/formulario-pb.component';
@@ -64,6 +65,19 @@ const routes: Routes = [
         canActivate: [roleGuard], // Se utiliza el guard para verificar el rol del usuario
 
         component: PerfilSocioComponent,
+        data: { role: '2' }
+      }
+    ]
+  },
+  {
+    path: 'miembros',
+    component: ContenidoComponent,
+    children: [
+      {
+        path: '',
+        canActivate: [roleGuard], // Se utiliza el guard para verificar el rol del usuario
+
+        component: SocioMiembrosComponent,
         data: { role: '2' }
       }
     ]
