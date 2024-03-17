@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./miembros-form.component.css']
 })
 export class MiembrosFormComponent {
+ parentescos = ['Padre', 'Madre', 'Hijo', 'Hija', 'Abuelo', 'Abuela', 'Tío', 'Tía', 'Conyuge', 'Sobrino', 'Sobrina'];
 
 }
