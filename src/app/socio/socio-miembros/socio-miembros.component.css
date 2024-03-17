@@ -1,9 +1,10 @@
-.tablaEmbarcaciones {
+.tablaMiembros {
     padding: 50px;
 }
 
 table {
     box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.5);
+    width: 50%;
 }
 
 th {
@@ -14,7 +15,7 @@ th {
 }
 
 .cabeceraTabla {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: lighter;
     text-align: center;
 }
@@ -25,7 +26,13 @@ th {
     font-weight: bold;
     
 }
-
+.addMember{
+    width: 3%;
+    margin-left: 20px;
+}
+.deleteMember{
+   cursor: pointer;
+}
 .table-striped>tbody>tr:nth-child(odd)>td {
     background-color: var(--wedgewood200);
 }
@@ -38,6 +45,7 @@ td {
     line-height: normal;
     text-decoration: none;
     color: #000000;
+    text-align: center;
 }
 
 .enlaceCreateMember {
