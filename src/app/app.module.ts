@@ -22,6 +22,7 @@ import { FormasPagoComponent } from './socio/socio/formas-pago/formas-pago.compo
 import { FacturasSocioComponent } from './socio/socio/facturas-socio/facturas-socio.component';
 import { PerfilSocioComponent } from './socio/socio/perfil-socio/perfil-socio.component';
 import { SocioMiembrosComponent } from './socio/socio/socio-miembros/socio-miembros.component';
+import { SocioModule } from './socio/socio/socio.module';
 @NgModule({
   declarations: [AppComponent, ErrorHandlerComponent, PanelComponent, SocioAmarresComponent, FormasPagoComponent, FacturasSocioComponent, PerfilSocioComponent, SocioMiembrosComponent],
 
@@ -41,6 +42,7 @@ import { SocioMiembrosComponent } from './socio/socio/socio-miembros/socio-miemb
     HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
+    SocioModule // Aunque no  es necesario importar el módulo SocioModule. Lo añado para recordarlo e investigar.
     
 
   ],

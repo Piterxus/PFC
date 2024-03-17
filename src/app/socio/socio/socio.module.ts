@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
 import { SocioComponent } from './socio.component';
+import { MiembrosFormComponent } from './socio-miembros/miembros-form/miembros-form.component';
 
 
 
@@ -8,10 +10,12 @@ import { SocioComponent } from './socio.component';
 @NgModule({
   declarations: [
     SocioComponent,
+    MiembrosFormComponent
 
   ],
   imports: [
-    CommonModule
+    CommonModule,
+ 
   ]
 })
 export class SocioModule { }
