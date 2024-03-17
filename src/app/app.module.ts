@@ -17,11 +17,11 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { AuthInterceptor } from './services/auth/auth.interceptor';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
 import { PanelComponent } from './panel/panel.component';
-import { SocioAmarresComponent } from './socio/socio-amarres/socio-amarres.component';
-import { FormasPagoComponent } from './socio/formas-pago/formas-pago.component';
-import { FacturasSocioComponent } from './socio/facturas-socio/facturas-socio.component';
-import { PerfilSocioComponent } from './socio/perfil-socio/perfil-socio.component';
-import { SocioMiembrosComponent } from './socio/socio-miembros/socio-miembros.component';
+import { SocioAmarresComponent } from './socio/socio/socio-amarres/socio-amarres.component';
+import { FormasPagoComponent } from './socio/socio/formas-pago/formas-pago.component';
+import { FacturasSocioComponent } from './socio/socio/facturas-socio/facturas-socio.component';
+import { PerfilSocioComponent } from './socio/socio/perfil-socio/perfil-socio.component';
+import { SocioMiembrosComponent } from './socio/socio/socio-miembros/socio-miembros.component';
 @NgModule({
   declarations: [AppComponent, ErrorHandlerComponent, PanelComponent, SocioAmarresComponent, FormasPagoComponent, FacturasSocioComponent, PerfilSocioComponent, SocioMiembrosComponent],
 
