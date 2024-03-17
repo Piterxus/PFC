@@ -21,8 +21,9 @@ import { SocioAmarresComponent } from './socio/socio-amarres/socio-amarres.compo
 import { FormasPagoComponent } from './socio/formas-pago/formas-pago.component';
 import { FacturasSocioComponent } from './socio/facturas-socio/facturas-socio.component';
 import { PerfilSocioComponent } from './socio/perfil-socio/perfil-socio.component';
+import { SocioMiembrosComponent } from './socio/socio-miembros/socio-miembros.component';
 @NgModule({
-  declarations: [AppComponent, ErrorHandlerComponent, PanelComponent, SocioAmarresComponent, FormasPagoComponent, FacturasSocioComponent, PerfilSocioComponent],
+  declarations: [AppComponent, ErrorHandlerComponent, PanelComponent, SocioAmarresComponent, FormasPagoComponent, FacturasSocioComponent, PerfilSocioComponent, SocioMiembrosComponent],
 
   imports: [
     BrowserModule,
