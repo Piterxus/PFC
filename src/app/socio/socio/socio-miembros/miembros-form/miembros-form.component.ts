@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./miembros-form.component.css']
 })
 export class MiembrosFormComponent {
- parentescos = ['Padre', 'Madre', 'Hijo', 'Hija', 'Abuelo', 'Abuela', 'Tío', 'Tía', 'Conyuge', 'Sobrino', 'Sobrina'];
+ parentescos = ['Padre', 'Madre', 'Hijo', 'Hija', 'Abuelo', 'Abuela', 'Tío', 'Tía', 'Cónyuge', 'Sobrino', 'Sobrina'];
  constructor(private router: Router) { }
 
  volver() {
