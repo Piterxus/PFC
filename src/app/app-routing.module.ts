@@ -14,6 +14,9 @@ import { SocioMiembrosComponent } from './socio/socio/socio-miembros/socio-miemb
 import { MiembrosFormComponent } from './socio/socio/socio-miembros/miembros-form/miembros-form.component';
 import { SocioAmarresComponent } from './socio/socio/socio-amarres/socio-amarres.component';
 import { AmarresFormComponent } from './socio/socio/socio-amarres/amarres-form/amarres-form.component';
+import { FacturasSocioComponent } from './socio/socio/facturas-socio/facturas-socio.component';
+import { FacturasTablaComponent } from './socio/socio/facturas-socio/facturas-tabla/facturas-tabla.component';
+import { FacturasDetalleComponent } from './socio/socio/facturas-socio/facturas-detalle/facturas-detalle.component';
 import { ContenidoPbComponent } from './plaza-base/contenido-pb/contenido-pb.component';
 import { TablaTripulanteComponent } from './transito/tabla-tripulante/tabla-tripulante.component';
 import { FormularioPbComponent } from './plaza-base/formulario-pb/formulario-pb.component';
@@ -27,6 +30,7 @@ import { PlantillaGuardamuellesComponent } from './movil/plantilla-guardamuelles
 import { roleGuard } from './role.guard';
 import { ListaCardsComponent } from './movil/lista-cards/lista-cards.component';
 import { ErrorHandlerComponent } from './error-handler/error-handler.component';
+
 
 
 
@@ -105,6 +109,31 @@ const routes: Routes = [
       {
         path: 'formulario',
         component: AmarresFormComponent,
+        canActivate: [roleGuard], // Se utiliza el guard para verificar el rol del usuario
+        data: { role: '2' }
+      }
+    ]
+  },
+  {
+    path: 'facturas',
+    component: ContenidoComponent,
+    children: [
+      {
+        path: '',
+        canActivate: [roleGuard], // Se utiliza el guard para verificar el rol del usuario
+
+        component: FacturasSocioComponent,
+        data: { role: '2' }
+      },
+      {
+        path: 'tabla-facturas',
+        component: FacturasTablaComponent,
+        canActivate: [roleGuard], // Se utiliza el guard para verificar el rol del usuario
+        data: { role: '2' }
+      },
+      {
+        path: 'detalle-factura',
+        component: FacturasDetalleComponent,
         canActivate: [roleGuard], // Se utiliza el guard para verificar el rol del usuario
         data: { role: '2' }
       }

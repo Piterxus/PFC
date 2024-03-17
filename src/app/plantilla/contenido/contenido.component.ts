@@ -38,6 +38,9 @@ export class ContenidoComponent implements OnInit {
     if (this.routeName === 'amarres-socio') {
       this.routeName = 'Gestión de amarres';
     }
+    if (this.routeName === 'facturas') {
+      this.routeName = 'Gestión de facturas';
+    }
 
 
   }
