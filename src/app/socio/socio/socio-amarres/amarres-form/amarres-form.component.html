@@ -1,1 +1,44 @@
-<p>amarres-form works!</p>
+<div class="d-flex justify-content-center">
+  <form action="" class="d-flex flex-column">
+    <h4 class="text-center">SOLICITAR AMARRE</h4>
+    <div class="formLeft">
+      <div class="mb-3 d-flex">
+        <label for="manga" class="form-label">Manga:</label>
+        <input
+          name="Manga"
+          type="number"
+          class="form-control mt-4"
+          placeholder="Manga"
+          min="1"
+        />
+      </div>
+      <div class="mb-3 d-flex">
+        <label for="apellidos" class="form-label">Eslora:</label>
+        <input
+          name="Eslora"
+          type="number"
+          class="form-control mt-4"
+          placeholder="Eslora"
+          min="1"
+        />
+      </div>
+      <!-- Considerar establecer límite de dimensiones -->
+
+      <!-- <div class="mb-3 d-flex">
+        <label for="parentesco">Parentesco:</label>
+        <select>
+          <option *ngFor="let parentesco of parentescos" [value]="parentesco">
+            {{ parentesco }}
+          </option>
+        </select>
+      </div> Quizás necesite parametrizar las dimensiones-->
+    </div>
+
+    <div class="d-flex justify-content-center mt-5 btnsPerfil">
+      <button type="button" class="btn btnCancelar" (click)="volver()">
+        CANCELAR
+      </button>
+      <button type="submit" class="btn btnAdd">SOLICITAR</button>
+    </div>
+  </form>
+</div>
