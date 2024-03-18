@@ -17,6 +17,7 @@ import { AmarresFormComponent } from './socio/socio/socio-amarres/amarres-form/a
 import { FacturasSocioComponent } from './socio/socio/facturas-socio/facturas-socio.component';
 import { FacturasTablaComponent } from './socio/socio/facturas-socio/facturas-tabla/facturas-tabla.component';
 import { FacturasDetalleComponent } from './socio/socio/facturas-socio/facturas-detalle/facturas-detalle.component';
+import { FormasPagoComponent } from './socio/socio/formas-pago/formas-pago.component';
 import { ContenidoPbComponent } from './plaza-base/contenido-pb/contenido-pb.component';
 import { TablaTripulanteComponent } from './transito/tabla-tripulante/tabla-tripulante.component';
 import { FormularioPbComponent } from './plaza-base/formulario-pb/formulario-pb.component';
@@ -135,6 +136,19 @@ const routes: Routes = [
         path: 'detalle-factura',
         component: FacturasDetalleComponent,
         canActivate: [roleGuard], // Se utiliza el guard para verificar el rol del usuario
+        data: { role: '2' }
+      }
+    ]
+  },
+  {
+    path: 'formas-pago',
+    component: ContenidoComponent,
+    children: [
+      {
+        path: '',
+        canActivate: [roleGuard], // Se utiliza el guard para verificar el rol del usuario
+
+        component: FormasPagoComponent,
         data: { role: '2' }
       }
     ]

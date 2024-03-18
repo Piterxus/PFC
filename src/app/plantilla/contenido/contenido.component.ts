@@ -41,6 +41,9 @@ export class ContenidoComponent implements OnInit {
     if (this.routeName === 'facturas') {
       this.routeName = 'Gestión de facturas';
     }
+    if (this.routeName === 'formas-pago') {
+      this.routeName = 'Formas de pago';
+    }
 
 
   }
