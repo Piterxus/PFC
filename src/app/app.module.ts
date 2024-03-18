@@ -23,6 +23,7 @@ import { FacturasSocioComponent } from './socio/socio/facturas-socio/facturas-so
 import { PerfilSocioComponent } from './socio/socio/perfil-socio/perfil-socio.component';
 import { SocioMiembrosComponent } from './socio/socio/socio-miembros/socio-miembros.component';
 import { SocioModule } from './socio/socio/socio.module';
+import { NgxPrintModule } from 'ngx-print';
 @NgModule({
   declarations: [AppComponent, ErrorHandlerComponent, PanelComponent, SocioAmarresComponent, FormasPagoComponent, FacturasSocioComponent, PerfilSocioComponent, SocioMiembrosComponent],
 
@@ -42,7 +43,8 @@ import { SocioModule } from './socio/socio/socio.module';
     HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
-    SocioModule // Aunque no  es necesario importar el módulo SocioModule. Lo añado para recordarlo e investigar.
+    SocioModule, // Aunque no  es necesario importar el módulo SocioModule. Lo añado para recordarlo e investigar.
+    NgxPrintModule
     
 
   ],

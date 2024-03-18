@@ -5,7 +5,7 @@ import { MiembrosFormComponent } from './socio-miembros/miembros-form/miembros-f
 import { AmarresFormComponent } from './socio-amarres/amarres-form/amarres-form.component';
 import { FacturasDetalleComponent } from './facturas-socio/facturas-detalle/facturas-detalle.component';
 import { FacturasTablaComponent } from './facturas-socio/facturas-tabla/facturas-tabla.component';
-
+import { NgxPrintModule } from 'ngx-print';
 
 
 
@@ -20,6 +20,7 @@ import { FacturasTablaComponent } from './facturas-socio/facturas-tabla/facturas
   ],
   imports: [
     CommonModule,
+    NgxPrintModule
 
   ]
 })
