@@ -1,1 +1,9 @@
-<p>forma-pago-form works!</p>
+<div *ngIf="tipo === 'cuenta'">
+ <p>form cuenta</p>
+  </div>
+  <div *ngIf="tipo === 'tarjeta'">
+ <p>form tarjeta</p>
+  </div>
+  
+  <button (click)="volverATablas()">Volver a las tablas</button>
+  

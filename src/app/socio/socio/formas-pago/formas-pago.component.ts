@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./formas-pago.component.css']
 })
 export class FormasPagoComponent {
+  tipoFormulario: string = '';
+  mostrarTablas: boolean = true;
+
+  constructor() { }
+
+  mostrarFormulario(tipo: string) {
+    this.tipoFormulario = tipo;
+    this.mostrarTablas = false;
+  }
+
+  volverATablas() {
+    this.mostrarTablas = true;
+  }
 
 }

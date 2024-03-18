@@ -1,7 +1,8 @@
 <div class="d-flex flex-column">
+    <div *ngIf="mostrarTablas">
     <div class="tablaFormas">
         <div class="d-flex flex-row-reverse mb-2">
-          <!-- <a
+            <!-- <a
             class="enlaceCreateMember"
             routerLink="../formulario"
             [queryParams]="{ tipo: 'vacio' }"
@@ -9,54 +10,44 @@
           > -->
         </div>
         <div class="d-flex align-items-center justify-content-center">
-          <!-- <table [dtTrigger]="dtTrigger" datatable [dtOptions]="dtOptions" class="table table-hover table-custom-hover rounded-3 overflow-hidden table-striped"> -->
-          <table
-            class="table table-hover table-custom-hover rounded-3 overflow-hidden table-striped"
-          >
-            <thead>
-              <tr>
-                <th [attr.colspan]="12" class="cabeceraTabla">
-                  Cuentas bancarias
-                  <a routerLink="./formulario">
-                    <img
-                      class="addForma"
-                      [src]="'/assets/img/add_solid.svg'"
-                      alt=""
-                    />
-                  </a>
-                </th>
-              </tr>
-              <tr class="cabeceraDatos">
-                <th class="text-center">Iban</th>
-      
-            
-                <th></th>
-              </tr>
-            </thead>
-            <tbody>
-              <!-- <tr (click)="someClickHandler(i)" *ngFor="let item of datos; let i = index" class="text-center">
+            <!-- <table [dtTrigger]="dtTrigger" datatable [dtOptions]="dtOptions" class="table table-hover table-custom-hover rounded-3 overflow-hidden table-striped"> -->
+            <table class="table table-hover table-custom-hover rounded-3 overflow-hidden table-striped">
+                <thead>
+                    <tr>
+                        <th [attr.colspan]="12" class="cabeceraTabla">
+                            Cuentas bancarias
+                            <a routerLink="./formulario">
+                                <img class="addForma" [src]="'/assets/img/add_solid.svg'" alt="" />
+                            </a>
+                        </th>
+                    </tr>
+                    <tr class="cabeceraDatos">
+                        <th class="text-center">Iban</th>
+
+
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <tr (click)="someClickHandler(i)" *ngFor="let item of datos; let i = index" class="text-center">
                   <td>{{ item.Nombre }}</td>
                   <td>{{ item.Edad }}</td>
                   <td>{{ item.Parentesco }}</td>
               </tr> -->
-              <tr>
-                <td>Prueba</td>
-                
-                <td>
-                  <img
-                    class="deleteForma"
-                    [src]="'/assets/img/socios/delete.svg'"
-                    alt=""
-                  />
-                </td>
-              </tr>
-            </tbody>
-          </table>
+                    <tr>
+                        <td>Prueba</td>
+
+                        <td>
+                            <img class="deleteForma" [src]="'/assets/img/socios/delete.svg'" alt="" />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-      </div>
-      <div class="tablaFormas">
+    </div>
+    <div class="tablaFormas">
         <div class="d-flex flex-row-reverse mb-2">
-          <!-- <a
+            <!-- <a
             class="enlaceCreateMember"
             routerLink="../formulario"
             [queryParams]="{ tipo: 'vacio' }"
@@ -64,53 +55,46 @@
           > -->
         </div>
         <div class="d-flex align-items-center justify-content-center">
-          <!-- <table [dtTrigger]="dtTrigger" datatable [dtOptions]="dtOptions" class="table table-hover table-custom-hover rounded-3 overflow-hidden table-striped"> -->
-          <table
-            class="table table-hover table-custom-hover rounded-3 overflow-hidden table-striped"
-          >
-            <thead>
-              <tr>
-                <th [attr.colspan]="12" class="cabeceraTabla">
-                  Tarjetas
-                  <a routerLink="./formulario">
-                    <img
-                      class="addForma"
-                      [src]="'/assets/img/add_solid.svg'"
-                      alt=""
-                    />
-                  </a>
-                </th>
-              </tr>
-              <tr class="cabeceraDatos">
-                <th class="text-center">Número</th>
-      
-                <th class="text-center">Caduca</th>
-               
-                <th></th>
-              </tr>
-            </thead>
-            <tbody>
-              <!-- <tr (click)="someClickHandler(i)" *ngFor="let item of datos; let i = index" class="text-center">
+            <!-- <table [dtTrigger]="dtTrigger" datatable [dtOptions]="dtOptions" class="table table-hover table-custom-hover rounded-3 overflow-hidden table-striped"> -->
+            <table class="table table-hover table-custom-hover rounded-3 overflow-hidden table-striped">
+                <thead>
+                    <tr>
+                        <th [attr.colspan]="12" class="cabeceraTabla">
+                            Tarjetas
+                            <a routerLink="./formulario">
+                                <img class="addForma" [src]="'/assets/img/add_solid.svg'" alt="" />
+                            </a>
+                        </th>
+                    </tr>
+                    <tr class="cabeceraDatos">
+                        <th class="text-center">Número</th>
+
+                        <th class="text-center">Caduca</th>
+
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <tr (click)="someClickHandler(i)" *ngFor="let item of datos; let i = index" class="text-center">
                   <td>{{ item.Nombre }}</td>
                   <td>{{ item.Edad }}</td>
                   <td>{{ item.Parentesco }}</td>
               </tr> -->
-              <tr>
-                <td>Prueba</td>
-                <td>Prueba</td>
-               
-                <td>
-                  <img
-                    class="deleteForma"
-                    [src]="'/assets/img/socios/delete.svg'"
-                    alt=""
-                  />
-                </td>
-              </tr>
-            </tbody>
-          </table>
+                    <tr>
+                        <td>Prueba</td>
+                        <td>Prueba</td>
+
+                        <td>
+                            <img class="deleteForma" [src]="'/assets/img/socios/delete.svg'" alt="" />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
+    </div>
+    </div>
+    <div *ngIf="!mostrarTablas">
+        <!-- Mostrar el componente de formularios con el tipo correspondiente -->
+        <!-- <app-forma-pago-form [tipo]="tipoFormulario" (volver)="volverATablas()"></app-forma-pago-form> -->
       </div>
 </div>
-  
-  
