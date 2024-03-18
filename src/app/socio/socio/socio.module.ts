@@ -6,6 +6,7 @@ import { AmarresFormComponent } from './socio-amarres/amarres-form/amarres-form.
 import { FacturasDetalleComponent } from './facturas-socio/facturas-detalle/facturas-detalle.component';
 import { FacturasTablaComponent } from './facturas-socio/facturas-tabla/facturas-tabla.component';
 import { NgxPrintModule } from 'ngx-print';
+import { FormaPagoFormComponent } from './formas-pago/forma-pago-form/forma-pago-form.component';
 
 
 
@@ -15,7 +16,8 @@ import { NgxPrintModule } from 'ngx-print';
     MiembrosFormComponent,
     AmarresFormComponent,
    FacturasDetalleComponent,
-    FacturasTablaComponent
+    FacturasTablaComponent,
+    FormaPagoFormComponent
 
   ],
   imports: [
