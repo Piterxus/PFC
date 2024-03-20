@@ -24,8 +24,9 @@ import { PerfilSocioComponent } from './socio/socio/perfil-socio/perfil-socio.co
 import { SocioMiembrosComponent } from './socio/socio/socio-miembros/socio-miembros.component';
 import { SocioModule } from './socio/socio/socio.module';
 import { NgxPrintModule } from 'ngx-print';
+import { TestComponent } from './test/test.component';
 @NgModule({
-  declarations: [AppComponent, ErrorHandlerComponent, PanelComponent, SocioAmarresComponent, FormasPagoComponent, FacturasSocioComponent, PerfilSocioComponent, SocioMiembrosComponent],
+  declarations: [AppComponent, ErrorHandlerComponent, PanelComponent, SocioAmarresComponent, FormasPagoComponent, FacturasSocioComponent, PerfilSocioComponent, SocioMiembrosComponent, TestComponent],
 
   imports: [
     BrowserModule,
