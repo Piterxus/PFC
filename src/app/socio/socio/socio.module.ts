@@ -24,6 +24,9 @@ import { FormaPagoFormComponent } from './formas-pago/forma-pago-form/forma-pago
     CommonModule,
     NgxPrintModule
 
+  ],
+  exports: [
+  FormaPagoFormComponent
   ]
 })
 export class SocioModule { }
