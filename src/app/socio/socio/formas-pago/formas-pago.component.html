@@ -16,7 +16,8 @@
                     <tr>
                         <th [attr.colspan]="12" class="cabeceraTabla">
                             Cuentas bancarias
-                            <a routerLink="./formulario">
+                            <!-- <a routerLink="./formulario"> -->
+                                <a (click)="mostrarFormulario('cuenta')">
                                 <img class="addForma" [src]="'/assets/img/add_solid.svg'" alt="" />
                             </a>
                         </th>
@@ -61,7 +62,8 @@
                     <tr>
                         <th [attr.colspan]="12" class="cabeceraTabla">
                             Tarjetas
-                            <a routerLink="./formulario">
+                            <!-- <a routerLink="./formulario"> -->
+                                <a (click)="mostrarFormulario('tarjeta')">
                                 <img class="addForma" [src]="'/assets/img/add_solid.svg'" alt="" />
                             </a>
                         </th>
@@ -95,6 +97,7 @@
     </div>
     <div *ngIf="!mostrarTablas">
         <!-- Mostrar el componente de formularios con el tipo correspondiente -->
-        <!-- <app-forma-pago-form [tipo]="tipoFormulario" (volver)="volverATablas()"></app-forma-pago-form> -->
+        <app-forma-pago-form [tipo]="tipoFormulario" (volver)="volverATablas()"></app-forma-pago-form>
+      
       </div>
 </div>
